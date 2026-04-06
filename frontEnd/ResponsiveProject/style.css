@@ -1,0 +1,108 @@
+:root {
+  --purple: #374375;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 24px;
+  background: #374375;
+  color: aliceblue;
+  position: fixed;
+  width: 100%;
+}
+nav .nav1 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav1 img {
+  height: 48px;
+}
+
+nav .nav2 ul {
+  display: flex;
+  gap: 32px;
+}
+@media (max-width: 48rem) {
+  nav {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+main {
+  padding-top: 100px;
+}
+
+.section1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0px 70px;
+}
+.section1 .left {
+  width: 42%;
+}
+
+.section1 .left h1 {
+  width: 400px;
+  color: var(--purple);
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.section1 .left .tags {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0px;
+  flex-wrap: wrap;
+}
+
+.section1 .left .tags h4 {
+  background: var(--purple);
+  color: aliceblue;
+  padding: 8px 24px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+.section2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #000;
+}
+
+.section2 h2 {
+  font-size: 128px;
+  font-weight: bold;
+  text-align: center;
+  background-image: url(./src/images/gradient-3d-fluid-background.jpg);
+  background-size: cover;
+  background-clip: text;
+  position: relative;
+  color: transparent;
+}
+
+.section2 h2.bloom {
+  position: absolute;
+  filter: blur(60px);
+}
